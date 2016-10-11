@@ -137,7 +137,7 @@ zeilen(other.get_zei()), spalten(other.get_spa()), val(nullptr), diag(nullptr), 
       {
 	if(other.get_zeilenindex(k)==i)
 	{
-	  val[i]=other(other.get_zeilenindex(k),other.get_spaltenindex(k));
+	  val[i]=other(other.get_zeilenindex(k),other.get_spaltenindex(k));	// Läuft altar
 	}
       }
     }
