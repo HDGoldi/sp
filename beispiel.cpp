@@ -41,19 +41,6 @@ int main()
 
 
 
-	MatrixCDS<double> C(A);
-	for(unsigned int i(0); i<6; i++)
-		std::cout << C.get_val1(i) << " ";
-	std::cout << std::endl;
-	for(unsigned int i(0); i<6; i++)
-		std::cout << C.get_val2(i) << " ";
-	std::cout << std::endl;
-	for(unsigned int i(0); i<6; i++)
-		std::cout << C.get_val3(i) << " ";
-	std::cout << std::endl;
-
-
-
 
 	Vector<double> b(6u);
 	b[0]=1;
@@ -72,12 +59,6 @@ int main()
 	std::cout << std::endl;
 
 
-
-	Vector<double> d(6u);
-	C.apply(b, d);
-	for(unsigned int i(0); i<6; i++)
-		std::cout << d[i] << "   ";
-	std::cout << std::endl;
 
 
 
